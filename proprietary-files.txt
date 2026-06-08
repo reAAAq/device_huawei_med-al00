@@ -3,7 +3,15 @@
 # AEE
 vendor/lib/libaedv.so
 
+# Common vendor libs
+vendor/lib/libimonitor.so
+vendor/lib/libaal_mtk.so
+vendor/lib/libxcollie.so
+vendor/lib/libhwlog.so
+vendor/lib/libaalservice.so
+
 # Audio
+vendor/lib/libmedia_helper-v29.so
 vendor/lib/hw/audio.primary.mt6765.so
 vendor/lib/hw/audio.r_submix.mt6765.so
 vendor/lib/hw/audio.usb.mt6765.so
@@ -580,6 +588,11 @@ vendor/lib/lib_sensor_fac_interface.so
 vendor/lib/libksensor.so
 vendor/lib/libsensor_custom.so
 vendor/lib/vendor.huawei.hardware.sensors@1.0.so
+vendor/etc/init/hw/init.sensor_1_0.rc
+vendor/lib/libcam.halsensor.so
+vendor/lib/libcam.utils.sensorprovider.so
+vendor/lib/librgbwlightsensor.so
+vendor/lib/libsensorndkbridge.so
 
 # Wi-Fi
 vendor/bin/hostapd_cli
