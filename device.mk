@@ -54,9 +54,7 @@ PRODUCT_PACKAGES += \
     libhwbinder
 
 # Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service
+# Stock MediaTek Bluetooth HAL is provided by proprietary blobs.
 
 # Display
 PRODUCT_PACKAGES += \
