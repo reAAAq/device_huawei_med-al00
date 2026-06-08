@@ -613,3 +613,17 @@ vendor/lib/vendor.huawei.hardware.wifi.supplicant@3.0.so
 vendor/lib/vendor.huawei.hardware.wifi@1.0.so
 vendor/lib/vendor.huawei.hardware.wifi@1.1.so
 vendor/lib/vendor.mediatek.hardware.wifi.hostapd@2.0.so
+
+# Touch / aptouch
+vendor/bin/aptouch_daemon
+vendor/etc/init/aptouch_daemon.rc
+vendor/lib/libthp.so
+vendor/lib/libthpinterface.so
+vendor/lib/libthplog.so
+vendor/lib/libthpsys.so
+vendor/lib/libafehalY163792500.so:vendor/lib/libafehal.so
+vendor/lib/libtsa.so
+vendor/lib/libtsa_v1.so
+odm/etc/firmware/ts/libthp.so
+odm/etc/firmware/ts/libthplog.so
+odm/etc/firmware/ts/libtsa_v1.so

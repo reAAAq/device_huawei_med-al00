@@ -1,0 +1,45 @@
+type aptouch, domain;
+type aptouch_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(aptouch)
+
+vendor_internal_prop(vendor_thp_prop)
+set_prop(aptouch, vendor_thp_prop)
+get_prop(aptouch, vendor_thp_prop)
+
+allow aptouch self:capability { dac_read_search net_admin net_raw setgid setuid sys_nice };
+allow aptouch self:process { getsched setsched };
+allow aptouch self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+allow aptouch self:netlink_route_socket create_socket_perms_no_ioctl;
+allow aptouch self:udp_socket create_socket_perms;
+allow aptouch self:tcp_socket create_stream_socket_perms;
+
+allow aptouch vendor_file:dir r_dir_perms;
+allow aptouch vendor_file:file { execute getattr map open read };
+allow aptouch vendor_file:lnk_file r_file_perms;
+allow aptouch system_file:dir r_dir_perms;
+allow aptouch system_file:file { execute getattr map open read };
+
+allow aptouch vndbinder_device:chr_file rw_file_perms;
+allow aptouch binder_device:chr_file rw_file_perms;
+allow aptouch hwbinder_device:chr_file rw_file_perms;
+allow aptouch gdix_thp_device:chr_file rw_file_perms;
+allow aptouch gdix_mt_wrapper_device:chr_file rw_file_perms;
+allow aptouch dsm_device:chr_file rw_file_perms;
+allow aptouch hwlog_exception_device:chr_file rw_file_perms;
+allow aptouch input_device:chr_file rw_file_perms;
+allow aptouch input_device:dir r_dir_perms;
+allow aptouch device:chr_file rw_file_perms;
+allow aptouch device:dir r_dir_perms;
+
+allow aptouch sysfs:file rw_file_perms;
+allow aptouch sysfs:dir r_dir_perms;
+allow aptouch proc:file r_file_perms;
+allow aptouch proc:dir r_dir_perms;
+
+binder_use(aptouch)
+hwbinder_use(aptouch)
+vndbinder_use(aptouch)
+
+allow aptouch hal_sensors_default:binder call;
+allow aptouch hal_sensors_default:fd use;

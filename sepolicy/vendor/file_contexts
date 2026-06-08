@@ -18,3 +18,8 @@
 /vendor/bin/hw/vendor\.huawei\.hardware\.power@1\.0-service   u:object_r:hal_power_default_exec:s0
 /vendor/bin/hw/vendor\.huawei\.hardware\.sensors@1\.0-service u:object_r:hal_sensors_default_exec:s0
 /vendor/bin/hw/vendor\.huawei\.hardware\.wifi@1\.1-service    u:object_r:hal_wifi_default_exec:s0
+
+# Touch / aptouch
+/dev/dsm                                     u:object_r:dsm_device:s0
+/dev/hwlog_exception                         u:object_r:hwlog_exception_device:s0
+/vendor/bin/aptouch_daemon                    u:object_r:aptouch_exec:s0
