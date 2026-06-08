@@ -36,6 +36,9 @@ ro.vendor.mtk_pq_support=2
 # SurfaceFlinger
 debug.sf.disable_backpressure=1
 
+# USB
+persist.sys.usb.config=mtp,adb
+
 # Wi-Fi
 persist.vendor.connsys.coredump.mode=2
 persist.vendor.connsys.chipid=-1
