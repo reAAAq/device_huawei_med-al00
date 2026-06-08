@@ -332,7 +332,20 @@ vendor/etc/aurisys_param/Speech_AudioParam.xml
 vendor/etc/smartpa_param/rt5509_param
 vendor/etc/smartpa_param/rt_device.xml
 
+# Connectivity
+vendor/bin/stp_dump3
+vendor/bin/wlan_assistant
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+vendor/etc/init/hw/init.connectivity.rc
+vendor/etc/init/init_connectivity.rc
+
 # Bluetooth
+vendor/bin/autobt
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
+vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
+vendor/lib/libstp.so
 vendor/bin/mac_addr_normalization
 vendor/lib/libbluetooth_hw_test.so
 vendor/lib/libbluetooth_mtk.so
