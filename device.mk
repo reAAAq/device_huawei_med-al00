@@ -173,6 +173,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Lineage power library is linked by system_server on this tree.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/lib/vendor.lineage.power@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lineage.power@1.0.so
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
