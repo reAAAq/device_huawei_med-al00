@@ -80,3 +80,6 @@
 /sys/class/leds/red                                     delay_off       0664    system      system
 /sys/class/leds/blue                                    delay_on        0664    system      system
 /sys/class/leds/blue                                    delay_off       0664    system      system
+# SmartPA / TFA9894 amplifier devices
+/dev/tfa98xx                                           0660    audio       audio
+/dev/smartpakit                                        0660    audio       audio
