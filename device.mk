@@ -165,6 +165,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/lib/vendor.lineage.power@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lineage.power@1.0.so
 
+# Radio / IMS hotfix orchestration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/radio/radio-hotfix-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/radio-hotfix-init.rc \
+    $(LOCAL_PATH)/configs/radio/start_mtk_ril_after_mux.sh:$(TARGET_COPY_OUT_VENDOR)/bin/start_mtk_ril_after_mux.sh \
+    $(LOCAL_PATH)/configs/radio/radio-hotfix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/radio-hotfix.xml
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
@@ -179,7 +185,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
-    
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
