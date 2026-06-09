@@ -82,3 +82,17 @@ ro.vendor.mtk_ril_mode=c6m_1rild
 ro.vendor.mtk_md_world_mode_support=1
 ro.vendor.mtk_rild_read_imsi=1
 ro.telephony.iwlan_operation_mode=legacy
+
+# Camera pipeline buffer counts
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=4
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=4
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=4
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=4
+persist.vendor.camera3.pipeline.bufnum.base.imgo=1
+persist.vendor.camera3.pipeline.bufnum.base.rrzo=1
+persist.vendor.camera3.pipeline.bufnum.base.lcso=1
+persist.vendor.camera3.pipeline.bufnum.base.rsso=1

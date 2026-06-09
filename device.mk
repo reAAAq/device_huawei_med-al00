@@ -57,6 +57,10 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 # Stock MediaTek Bluetooth HAL is provided by proprietary blobs.
 
+# Camera
+PRODUCT_PACKAGES += \
+    Camera2
+
 # Display
 PRODUCT_PACKAGES += \
     vendor.huawei.hardware.light@2.0-service \
