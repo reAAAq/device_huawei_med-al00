@@ -176,6 +176,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/radio/radio-hotfix-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/radio-hotfix-init.rc \
     $(LOCAL_PATH)/configs/radio/start_mtk_ril_after_mux.sh:$(TARGET_COPY_OUT_VENDOR)/bin/start_mtk_ril_after_mux.sh
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-service \
+    vibrator.mt6765
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6765 \

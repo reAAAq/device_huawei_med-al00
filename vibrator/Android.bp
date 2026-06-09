@@ -1,0 +1,10 @@
+// Device-specific legacy vibrator HAL for the MTK LED vibrator node.
+cc_library_shared {
+    name: "vibrator.mt6765",
+    relative_install_path: "hw",
+    proprietary: true,
+    header_libs: ["libhardware_headers"],
+    srcs: ["vibrator.c"],
+    cflags: ["-Wall", "-Werror"],
+    shared_libs: ["liblog"],
+}
