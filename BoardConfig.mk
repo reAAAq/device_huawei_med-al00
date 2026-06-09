@@ -149,6 +149,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
 # Vintf
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/radio/radio-hotfix.xml
 
 # VNDK
 PRODUCT_USE_VNDK_OVERRIDE := true
