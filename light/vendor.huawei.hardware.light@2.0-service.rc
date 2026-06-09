@@ -1,0 +1,5 @@
+service light-ext-hal-2-0 /vendor/bin/hw/vendor.huawei.hardware.light@2.0-service
+    class hal
+    user system
+    group system
+    interface android.hardware.light@2.0::ILight default

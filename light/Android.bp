@@ -1,0 +1,15 @@
+cc_binary {
+    name: "vendor.huawei.hardware.light@2.0-service",
+    defaults: ["hidl_defaults"],
+    vendor: true,
+    relative_install_path: "hw",
+    init_rc: ["vendor.huawei.hardware.light@2.0-service.rc"],
+    srcs: ["service.cpp"],
+    shared_libs: [
+        "android.hardware.light@2.0",
+        "libbase",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+}
