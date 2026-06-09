@@ -6,3 +6,16 @@
 
 soong_namespace {
 }
+
+
+cc_prebuilt_library_shared {
+    name: "libmedia_helper-v29",
+    owner: "huawei",
+    vendor: true,
+    compile_multilib: "32",
+    srcs: ["prebuilts/lib/libmedia_helper-v29.so"],
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+}
