@@ -39,3 +39,6 @@
 /vendor/bin/volte_ua                         u:object_r:volte_ua_exec:s0
 /vendor/bin/volte_imcb                       u:object_r:volte_imcb_exec:s0
 /vendor/bin/hw/camerahalserver    u:object_r:hal_camera_default_exec:s0
+
+# Audio smart PA
+/dev/tfa98xx                                  u:object_r:tfa98xx_device:s0

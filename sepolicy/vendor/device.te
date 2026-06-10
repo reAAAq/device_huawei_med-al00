@@ -6,3 +6,6 @@ type teecd_device, dev_type;
 # Huawei THP userspace daemon talks to these vendor character devices.
 type dsm_device, dev_type;
 type hwlog_exception_device, dev_type;
+
+# NXP smart PA control device.
+type tfa98xx_device, dev_type;

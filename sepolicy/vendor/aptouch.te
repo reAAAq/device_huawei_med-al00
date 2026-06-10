@@ -43,3 +43,7 @@ vndbinder_use(aptouch)
 
 allow aptouch hal_sensors_default:binder call;
 allow aptouch hal_sensors_default:fd use;
+
+# aptouch probes primary emulated storage status while switching touch work modes.
+allow aptouch mnt_user_file:lnk_file read;
+allow aptouch fuse:dir search;

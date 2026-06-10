@@ -13,3 +13,6 @@ allow hal_audio_default sysfs_dt_firmware_android:file { read open getattr };
 # 允许 audio HAL 连接 property_service
 allow hal_audio_default property_socket:sock_file write;
 allow hal_audio_default init:unix_stream_socket connectto;
+
+# Audio HAL controls the NXP smart PA through /dev/tfa98xx.
+allow hal_audio_default tfa98xx_device:chr_file rw_file_perms;

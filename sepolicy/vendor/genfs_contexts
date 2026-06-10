@@ -1,0 +1,6 @@
+# Huawei battery supply nodes used by health HAL.
+genfscon sysfs /devices/platform/huawei_battery/power_supply u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/huawei_battery/power_supply/hwbatt u:object_r:sysfs_batteryinfo:s0
+
+genfscon sysfs /devices/platform/huawei_battery/power_supply/Battery u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/usb_short_circuit_protect/power_supply/uscp u:object_r:sysfs_batteryinfo:s0

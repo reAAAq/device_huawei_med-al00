@@ -1,0 +1,8 @@
+# Stock sensors HAL reads and updates batching controls in /sys/devices/virtual/sensor.
+allow hal_sensors_default sysfs_sensor:dir r_dir_perms;
+allow hal_sensors_default sysfs_sensor:file rw_file_perms;
+
+# Sensor HAL reads MTK sensor misc character devices.
+allow hal_sensors_default m_acc_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_als_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_situ_misc_device:chr_file r_file_perms;
