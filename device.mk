@@ -101,6 +101,9 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp_policy/,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
 
 # Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayEnjoy10e
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions

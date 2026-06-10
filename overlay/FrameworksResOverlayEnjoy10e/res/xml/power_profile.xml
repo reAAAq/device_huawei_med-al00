@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License")
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<device name="Android">
+  <!-- All values are in mA except as noted -->
+  <item name="none">0</item>
+  <item name="screen.on">75</item> <!-- min brite -->
+  <item name="bluetooth.active">118</item>
+  <item name="bluetooth.on">1.5</item>
+  <item name="bluetooth.at">1.5</item> <!-- TBD -->
+  <item name="screen.full">325</item> <!-- backlight 16 leds -->
+  <item name="wifi.on">0.4</item>
+  <item name="wifi.active">222</item>
+  <item name="wifi.scan">114</item>
+  <item name="dsp.audio">41</item>
+  <item name="dsp.video">145</item>
+  <item name="radio.active">190</item>
+  <item name="gps.on">41</item>
+  <item name="battery.capacity">5000</item> <!-- 5000mAh -->
+  <item name="radio.scanning">65</item> <!-- TBD -->
+  <!-- Current consumed by the radio at different signal strengths, when paging  -->
+  <array name="radio.on"> <!-- 1 entry per signal strength bin, TBD -->
+    <value>13.0</value>
+    <value>10.0</value>
+    <value>10.0</value>
+    <value>10.0</value>
+    <value>10.0</value>
+  </array>
+  <array name="cpu.clusters.cores">
+    <value>4</value> <!-- cluster 0 has cpu0, cpu1, cpu2, cpu3 -->
+    <value>4</value> <!-- cluster 1 has cpu4, cpu5, cpu6, cpu7 -->
+  </array>
+  <array name="cpu.core_speeds.cluster0">
+    <value>2301000</value> <!-- 2.30 GHz CPU speed -->
+    <value>2215000</value> <!-- 2.21 GHz CPU speed -->
+    <value>2139000</value> <!-- 2.13 GHz CPU speed -->
+    <value>2074000</value> <!-- 2.07 GHz CPU speed -->
+    <value>2009000</value> <!-- 2.0 GHz CPU speed -->
+    <value>1944000</value> <!-- 1.94 GHz CPU speed -->
+    <value>1879000</value> <!-- 1.87 GHz CPU speed -->
+    <value>1814000</value> <!-- 1.81 GHz CPU speed -->
+    <value>1750000</value> <!-- 1.75 GHz CPU speed -->
+    <value>1617000</value> <!--1.61 GHz CPU speed -->
+    <value>1484000</value> <!--1.48 GHz CPU speed -->
+    <value>1351000</value> <!--1.35 GHz CPU speed -->
+    <value>1218000</value> <!-- 1.21 GHz CPU speed -->
+    <value>1085000</value> <!-- 1.08 GHz CPU speed -->
+    <value>979000</value>  <!-- 979 MHz CPU speed -->
+    <value>900000</value>  <!-- 900 MHz CPU speed -->
+  </array>
+  <array name="cpu.core_speeds.cluster1">
+    <value>1800000</value> <!-- 1.80 GHz CPU speed -->
+    <value>1682000</value> <!-- 1.68 GHz CPU speed -->
+    <value>1579000</value> <!-- 1.57 GHz CPU speed -->
+    <value>1491000</value> <!-- 1.49 GHz CPU speed -->
+    <value>1402000</value> <!-- 1.40 GHz CPU speed -->
+    <value>1314000</value> <!-- 1.31 GHz CPU speed -->
+    <value>1226000</value> <!-- 1.22 GHz CPU speed -->
+    <value>1138000</value> <!-- 1.13 GHz CPU speed -->
+    <value>1050000</value> <!-- 1.05 GHz CPU speed -->
+    <value>948000</value>  <!-- 948 MHz CPU speed -->
+    <value>846000</value>  <!-- 846 MHz CPU speed -->
+    <value>745000</value>  <!-- 745 MHz CPU speed -->
+    <value>643000</value>  <!-- 643 MHz CPU speed -->
+    <value>542000</value>  <!-- 542 MHz CPU speed -->
+    <value>501000</value>  <!-- 501 MHz CPU speed -->
+    <value>400000</value>  <!-- 400 MHz CPU speed -->
+  </array>
+  <!-- Power consumption in suspend -->
+  <item name="cpu.idle">4</item>
+  <!-- Power consumption due to wake lock held -->
+  <item name="cpu.awake">31</item>
+  <!-- Power consumption at different speeds -->
+  <array name="cpu.core_power.cluster0">
+    <value>360</value>
+    <value>347</value>
+    <value>282</value>
+    <value>274</value>
+    <value>247</value>
+    <value>227</value>
+    <value>199</value>
+    <value>177</value>
+    <value>157</value>
+    <value>133</value>
+    <value>114</value>
+    <value>96</value>
+    <value>81</value>
+    <value>67</value>
+    <value>56</value>
+    <value>48</value>
+  </array>
+  <array name="cpu.core_power.cluster1">
+    <value>215</value>
+    <value>201</value>
+    <value>173</value>
+    <value>150</value>
+    <value>122</value>
+    <value>114</value>
+    <value>99</value>
+    <value>77</value>
+    <value>72</value>
+    <value>55</value>
+    <value>49</value>
+    <value>40</value>
+    <value>32</value>
+    <value>25</value>
+    <value>23</value>
+    <value>16</value>
+  </array>
+</device>

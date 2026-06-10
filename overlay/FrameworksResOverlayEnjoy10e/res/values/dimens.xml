@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Stock frameworkResOverlay.apk status bar height for waterdrop panel. -->
+    <dimen name="status_bar_height">4.459991mm</dimen>
+    <dimen name="status_bar_height_portrait">4.459991mm</dimen>
+</resources>

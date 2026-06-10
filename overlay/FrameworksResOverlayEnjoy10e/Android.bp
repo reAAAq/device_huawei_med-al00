@@ -1,0 +1,7 @@
+// Stock-derived framework resource overlay for enjoy10e.
+runtime_resource_overlay {
+    name: "FrameworksResOverlayEnjoy10e",
+    sdk_version: "current",
+    resource_dirs: ["res"],
+    vendor: true,
+}
