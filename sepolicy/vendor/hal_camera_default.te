@@ -27,3 +27,9 @@ allow hal_camera_default debugfs_ion:dir search;
 
 # system_server monitors the camera provider through hwbinder callbacks.
 binder_call(system_server, hal_camera_default)
+
+# Camera HAL controls flashlight and reads thermal state through stock MTK paths.
+allow hal_camera_default flashlight_device:chr_file rw_file_perms;
+allow hal_camera_default proc_thermal:dir search;
+binder_call(hal_camera_default, system_server)
+allow hal_camera_default mtk_hal_power_hwservice:hwservice_manager find;

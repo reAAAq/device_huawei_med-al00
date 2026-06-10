@@ -1,0 +1,2 @@
+# MTK Bluetooth HAL talks to the STP Bluetooth transport device.
+allow hal_bluetooth_default stpbt_device:chr_file rw_file_perms;
