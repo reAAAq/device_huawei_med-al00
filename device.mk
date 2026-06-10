@@ -102,7 +102,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayEnjoy10e
+    FrameworksResOverlayEnjoy10e \
+    ScreenGeometryOverlayEnjoy10e
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

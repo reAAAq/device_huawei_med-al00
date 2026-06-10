@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Stock frameworkResOverlay.apk status bar height for the 48px waterdrop cutout. -->
+    <dimen name="status_bar_height">4.459991mm</dimen>
+    <dimen name="status_bar_height_portrait">4.459991mm</dimen>
+
+    <!-- Stock RoundCornerDisplay uses a 720x80 top mask and disables bottom masking. -->
+    <dimen name="rounded_corner_radius">0px</dimen>
+    <dimen name="rounded_corner_radius_top">80px</dimen>
+    <dimen name="rounded_corner_radius_bottom">0px</dimen>
+</resources>

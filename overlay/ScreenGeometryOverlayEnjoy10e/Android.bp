@@ -1,0 +1,7 @@
+// Stock-derived display cutout and rounded-corner overlay for enjoy10e.
+runtime_resource_overlay {
+    name: "ScreenGeometryOverlayEnjoy10e",
+    sdk_version: "current",
+    resource_dirs: ["res"],
+    vendor: true,
+}
