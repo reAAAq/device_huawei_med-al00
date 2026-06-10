@@ -171,10 +171,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-# Lineage power library is linked by system_server on this tree.
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/lib/vendor.lineage.power@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lineage.power@1.0.so
-
 # Radio / IMS hotfix orchestration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/radio/radio-hotfix-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/radio-hotfix-init.rc \

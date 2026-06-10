@@ -1,6 +1,14 @@
 import /vendor/etc/init/hw/init.mt6765.usb.rc
 
 on early-init
+
+    # Mount logical partitions missing from kernel DT fstab before linkerconfig.
+    wait /dev/block/mapper/system_ext
+    wait /dev/block/mapper/product
+    mkdir /system_ext 0755 root root
+    mkdir /product 0755 root root
+    mount ext4 /dev/block/mapper/system_ext /system_ext ro
+    mount ext4 /dev/block/mapper/product /product ro
     # Performance
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "0 0 5 0"
     write /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_req_ddr_opp 0
@@ -643,11 +651,3 @@ on property:sys.boot_completed=1
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1"
     write /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_req_ddr_opp "-1"
 
-# Bring-up fallback: DT fstab currently misses these logical partitions.
-on post-fs
-    wait /dev/block/mapper/system_ext 10
-    wait /dev/block/mapper/product 10
-    mkdir /system_ext 0755 root root
-    mkdir /product 0755 root root
-    mount ext4 /dev/block/mapper/system_ext /system_ext ro
-    mount ext4 /dev/block/mapper/product /product ro
